@@ -27,5 +27,8 @@ replay_pid*
 # Eclipse
 .metadata/*
 .metadata/.mylyn/*
+.metadata
 
 **/.project
+/.metadata/
+/.metadata/*
