@@ -1,0 +1,45 @@
+package com.in28minutes.arrays;
+
+import java.util.Arrays;
+
+public class Student {
+	private int[] marks;
+	private String name;
+
+	Student(String name, int[] marks) {
+		this.name = name;
+		this.marks = marks;
+	}
+
+	int getNumberOfMarks() {
+		return marks.length;
+	}
+
+	int getTotalSumOfMarks() {
+		int sum = 0;
+
+		for (int i = 0; i < marks.length - 1; i++) {
+			sum += marks[i];
+		}
+
+		return sum;
+	}
+
+	int getMaximumMark() {
+		int[] sorted = marks;
+		Arrays.sort(sorted);
+
+		return sorted[sorted.length - 1];
+	}
+
+	int getMinimumMark(
+			int[] sorted = marks;
+			Arrays.sort(sorted);
+
+			return sorted[sorted.length - 1];) {
+	};
+
+	int getAverageMarks() {
+	};
+
+}

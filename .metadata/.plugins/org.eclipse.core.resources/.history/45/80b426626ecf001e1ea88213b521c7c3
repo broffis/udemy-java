@@ -1,0 +1,10 @@
+package com.in28minutes.arrays;
+
+public class StudentRunner {
+
+	public static void main(String[] args) {
+		Student student = new Student({ 78, 92, 99, 100, 75});
+
+	}
+
+}

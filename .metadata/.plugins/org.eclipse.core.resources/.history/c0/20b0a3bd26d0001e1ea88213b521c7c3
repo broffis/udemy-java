@@ -1,0 +1,40 @@
+package com.in28minutes.oopAgain;
+
+public class Reviews {
+	private int id;
+	private String review;
+	private byte rating;
+
+	public Reviews(int id, String review, byte rating) {
+		super();
+		this.id = id;
+		this.review = review;
+		this.rating = rating;
+	}
+
+	public String getReview() {
+		return review;
+	}
+
+	public void setReview(String review) {
+		this.review = review;
+	}
+
+	public byte getRating() {
+		return rating;
+	}
+
+	public void setRating(byte rating) {
+		this.rating = rating;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("review - [%s], rating - [%d]", review, rating);
+	}
+
+}

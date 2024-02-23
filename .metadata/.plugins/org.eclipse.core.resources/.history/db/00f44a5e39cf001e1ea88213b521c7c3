@@ -1,0 +1,11 @@
+package com.in28days.loops;
+
+import java.util.Scanner;
+
+public class DoWhileQuestionRunner {
+
+	public static void main(String[] args) {
+		System.out.print("Enter a number: ");
+		Scanner scanner = new Scanner(System.in);
+	}
+}

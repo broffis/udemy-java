@@ -1,0 +1,65 @@
+package com.in28minutes.maps;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+// Maps don't actually implement the Collections interface, even if they're considered part of it
+public class Maps {
+	public static void main(String[] args) {
+//		introToMaps();
+
+		compareMaps();
+	}
+
+	static void introToMaps() {
+//		Map<key, value>
+		Map<String, Integer> map = Map.of("A", 3, "B", 5, "Z", 10);
+//		map.put("R", 1); // error b/c Map.of is immutable
+
+		map.get("Z"); // 10
+		map.get("C"); // null
+		map.isEmpty(); // false
+		map.containsKey("A"); // true
+		map.containsKey("C"); // false
+		map.containsValue(8);// false
+		map.containsValue(3);// true
+		map.keySet(); // [Z, A, B]
+		map.values(); // [10,3,5]
+		System.out.println(map); // {Z=10, A=3, B=5}
+
+		Map<String, Integer> hashMap = new HashMap<>(map);
+		hashMap.put("F", 5);
+		System.out.println(hashMap); // {A=3, B=5, Z=10, F=5}
+		hashMap.put("F", 11); // returns previous value, so 10
+		System.out.println(hashMap); // {A=3, B=5, Z=11, F=5}
+	}
+
+	static void compareMaps() {
+		Map<String, Integer> hashMap = new HashMap<>();
+		hashMap.put("Z", 5);
+		hashMap.put("A", 15);
+		hashMap.put("F", 25);
+		hashMap.put("L", 250);
+
+		System.out.println(hashMap); // {A=15, F=25, Z=5, L=250} - unordered
+
+		LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
+		linkedHashMap.put("F", 25);
+		linkedHashMap.put("A", 15);
+		linkedHashMap.put("Z", 5);
+		linkedHashMap.put("L", 250);
+
+		System.out.println(linkedHashMap); // {F=25, A=15, Z=5, L=250} - insert order
+
+		TreeMap<String, Integer> treeMap = new TreeMap<>();
+		treeMap.put("F", 25);
+		treeMap.put("A", 15);
+		treeMap.put("Z", 5);
+		treeMap.put("L", 250);
+
+		System.out.println(treeMap); // {A=15, F=25, L=250, Z=5} - sorted
+	}
+
+}

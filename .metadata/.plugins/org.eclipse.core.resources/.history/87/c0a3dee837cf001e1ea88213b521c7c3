@@ -1,0 +1,10 @@
+package com.in28days.loops;
+
+public class WhileLoops {
+	private int num;
+
+	WhileLoops(int num) {
+		this.num = num;
+	}
+
+}

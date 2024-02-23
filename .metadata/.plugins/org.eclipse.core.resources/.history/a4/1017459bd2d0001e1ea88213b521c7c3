@@ -1,0 +1,37 @@
+package com.in28minutes.lists;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class AscStudentComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student student1, Student student2) {
+		// TODO Auto-generated method stub
+		return Integer.compare(student1.getId(), student2.getId());
+	}
+
+}
+
+public class StudentsCollectionRunner {
+
+	public static void main(String[] args) {
+		List<Student> students = List.of(new Student(1, "Ranga"), new Student(101, "Adam"), new Student(3, "Eve"));
+
+		System.out.println(students);
+
+		List<Student> studentsAl = new ArrayList<>(students);
+		Collections.sort(studentsAl); // => needs a compare method on the class
+
+		System.out.println(studentsAl);
+
+		Collections.sort(studentsAl, new AscStudentComparator());
+		System.out.println(studentsAl);
+
+		studentsAl.sort(new AscStudentComparator());
+
+	}
+
+}

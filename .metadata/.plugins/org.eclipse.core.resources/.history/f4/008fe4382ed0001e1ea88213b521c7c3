@@ -1,0 +1,13 @@
+package com.in28minutes.oopAgain.level3.abstractClass;
+
+public class Recipe1 extends AbstractRecipe {
+
+	@Override
+	void getReady() {}
+	
+	@Override
+	void doTheDish() {}
+	
+	@Override
+	void cleanup() {}
+}

@@ -1,0 +1,14 @@
+package com.in28minutes.generics;
+
+public class GenericsRunner {
+
+	public static void main(String[] args) {
+		MyCustomList list = new MyCustomList();
+
+		list.addElement("Element 1");
+		list.addElement("Element 2");
+		list.addElement("Element 3");
+
+	}
+
+}

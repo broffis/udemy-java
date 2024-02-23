@@ -1,0 +1,6 @@
+package com.in28minutes.primitives;
+
+public class BiDecRunner {
+
+	public static void main(String[] args) {}
+}

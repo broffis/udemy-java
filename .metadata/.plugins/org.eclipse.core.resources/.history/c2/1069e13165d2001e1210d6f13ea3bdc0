@@ -1,0 +1,25 @@
+package com.in28minutes.exceptionHandling;
+
+import java.util.Scanner;
+
+public class FinallyRunner {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+
+
+		try {
+			System.out.println("Before Scanner Close");
+			int[] numbers = { 12, 3, 4, 5 };
+			int number = numbers[5];
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		} finally {
+			scanner.close();
+			System.out.println("Scanner closed");
+		}
+
+	}
+
+}

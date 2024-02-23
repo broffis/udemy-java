@@ -1,0 +1,10 @@
+package com.in28minutes.oopAgain.level3.abstractClass;
+
+public class RecipeRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

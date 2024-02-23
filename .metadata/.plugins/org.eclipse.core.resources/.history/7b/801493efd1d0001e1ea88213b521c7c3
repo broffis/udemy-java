@@ -1,0 +1,21 @@
+package com.in28minutes.lists;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class StudentsCollectionRunner {
+
+	public static void main(String[] args) {
+		List<Student> students = List.of(new Student(1, "Ranga"), new Student(2, "Adam"), new Student(3, "Eve"));
+
+		System.out.println(students);
+
+		List<Student> studentsAl = new ArrayList<>(students);
+		Collections.sort(studentsAl); // => needs a compare method on the class
+
+		System.out.println(studentsAl);
+
+	}
+
+}

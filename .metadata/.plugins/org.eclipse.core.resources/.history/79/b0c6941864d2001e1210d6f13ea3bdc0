@@ -1,0 +1,27 @@
+package com.in28minutes.exceptionHandling;
+
+public class ExceptionHandlingRunner2 {
+	public static void main(String[] args) {
+		extracted();
+		System.out.println("Main ended");
+
+	}
+
+	static void extracted() {
+		extracted2();
+		System.out.println("Extracted ended");
+	}
+
+	static void extracted2() {
+		try {
+			String str = null;
+			str.length();
+			System.out.println("Extracted2 ended");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+
+		}
+
+	}
+
+}

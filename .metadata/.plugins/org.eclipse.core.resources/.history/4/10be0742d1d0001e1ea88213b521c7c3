@@ -1,0 +1,14 @@
+package com.in28minutes.lists;
+
+import java.util.List;
+
+public class StudentsCollectionRunner {
+
+	public static void main(String[] args) {
+		List<Student> students = List.of(new Student(1, "Ranga"), new Student(2, "Adam"), new Student(3, "Eve"));
+		
+		System.out.println(student);
+
+	}
+
+}

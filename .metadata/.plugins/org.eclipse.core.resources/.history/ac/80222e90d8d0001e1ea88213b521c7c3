@@ -1,0 +1,19 @@
+package com.in28minutes.queues;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class Queues {
+
+	public static void main(String[] args) {
+		introToQueues();
+
+	}
+
+	static void introToQueues() {
+		Queue<String> queue = new PriorityQueue<>();
+		
+		System.out.println(queue.poll()); // null
+	}
+
+}

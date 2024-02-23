@@ -1,0 +1,12 @@
+package com.in28minutes.oopAgain;
+
+public class Rectangle {
+	private int length;
+	private int width;
+	
+	Rectangle(int length, int width) {
+		this.length = length;
+		this.width = width;
+	}
+
+}

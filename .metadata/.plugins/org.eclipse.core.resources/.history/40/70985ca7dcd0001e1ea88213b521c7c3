@@ -1,0 +1,10 @@
+package com.in28minutes.maps;
+
+public class TreeMaps {
+
+	public static void main(String[] args) {
+		TreeMap<String, Integer> treemap = new TreeMap<>();
+
+	}
+
+}

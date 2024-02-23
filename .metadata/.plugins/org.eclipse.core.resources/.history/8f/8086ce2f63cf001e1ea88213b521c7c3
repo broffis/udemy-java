@@ -1,0 +1,14 @@
+package com.in28minutes.referenceTypes;
+
+public class BuiltInReferenceTypes {
+
+	public static void main(String[] args) {
+//		System.out.print("Test".length());
+		String str = "Test";
+		
+		System.out.print(str.length());
+		
+
+	}
+
+}

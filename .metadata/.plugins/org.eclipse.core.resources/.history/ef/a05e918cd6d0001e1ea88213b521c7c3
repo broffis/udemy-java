@@ -1,0 +1,56 @@
+package com.in28minutes.sets;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetsPractice {
+
+	public static void main(String[] args) {
+//		introToSets();
+
+		treeSetsPractice();
+	}
+
+	static void introToSets() {
+		Set<Integer> numbers = new HashSet<>();
+		numbers.add(765432);
+		numbers.add(76543);
+		numbers.add(7654);
+		numbers.add(765);
+		numbers.add(76);
+
+		System.out.println("HashSet - " + numbers); // => insert order not maintained b/c it doesn't matter
+
+		Set<Integer> numbersLhs = new LinkedHashSet<>();
+		numbersLhs.add(765432);
+		numbersLhs.add(76543);
+		numbersLhs.add(7654);
+		numbersLhs.add(765);
+		numbersLhs.add(76);
+
+		System.out.println("LinkedHashSet - " + numbersLhs); // => insert order maintained
+
+		numbersLhs.add(76); // => returns false b/c sets don't support duplicates
+
+		Set<Integer> numbersTree = new TreeSet<>();
+		numbersLhs.add(765432);
+		numbersTree.add(76543);
+		numbersTree.add(7654);
+		numbersTree.add(765);
+		numbersTree.add(76);
+
+		System.out.println("Tree - " + numbersTree); // => sorts based on tree set (smallest to largest)
+	}
+
+	static void treeSetsPractice() {
+		TreeSet<Integer> numbers = new TreeSet<>(Set.of(65, 54, 34, 12, 99));
+		System.out.println(numbers);
+		
+		System.out.println(numbers.floor(40)); // 34 => inclusive
+		System.out.println(numbers.floor(34)); // 34 => inclusive
+		System.out.println(numbers.lower(34)); // 12 => exclusive 
+	}
+
+}

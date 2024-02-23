@@ -1,0 +1,14 @@
+package com.in28minutes.oopAgain.level2.inheritance;
+
+public class StudentRunner {
+
+	public static void main(String[] args) {
+		Student student = new Student();
+
+		student.setName("Brandon");
+		
+		System.out.println(student);
+
+	}
+
+}

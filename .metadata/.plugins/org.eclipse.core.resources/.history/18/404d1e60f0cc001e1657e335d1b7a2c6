@@ -1,0 +1,10 @@
+package com.in28minutes.primitives;
+
+public class MyChar {
+	private char ch;
+
+	boolean isVowel() {
+		return this.ch == 'a' || this.ch == 'e' || this.ch == 'i' || this.ch == 'o' || this.ch == 'u';
+	}
+
+}

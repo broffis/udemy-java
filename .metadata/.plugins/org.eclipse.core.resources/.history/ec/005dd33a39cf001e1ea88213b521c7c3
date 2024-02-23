@@ -1,0 +1,8 @@
+package com.in28days.loops;
+
+public class DoWhileQuestionRunner {
+
+	public static void main(String[] args) {
+		System.out.print("Enter a number: " );
+		}
+}

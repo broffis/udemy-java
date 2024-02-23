@@ -1,0 +1,10 @@
+package com.in28minutes.maps;
+
+
+// Maps don't actually implement the Collections interface, even if they're considered part of it
+public class Maps {
+	public static void main(String[] args) {
+		
+	}
+
+}

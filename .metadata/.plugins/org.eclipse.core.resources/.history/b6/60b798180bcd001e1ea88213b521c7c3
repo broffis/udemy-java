@@ -1,0 +1,64 @@
+package com.in28minutes.conditionals;
+
+import java.util.Scanner;
+
+public class MenuRunner {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter Number1:");
+		int number1 = scanner.nextInt();
+
+		System.out.println("The number you entered is - " + number1);
+
+		System.out.print("Enter Number2:");
+		int number2 = scanner.nextInt();
+
+		System.out.println("The number you entered is - " + number2);
+
+		System.out.println("Please select an option:");
+		System.out.println("1 - Add");
+		System.out.println("2 - Subtract");
+		System.out.println("3 - Divide");
+		System.out.println("4 - Multiply");
+
+		int mathOption = scanner.nextInt();
+
+		String output = performOperationUsingNestedIfElse(number1, number2, mathOption, output);
+
+		System.out.println(output);
+
+	}
+
+	private static String performOperationUsingNestedIfElse(int number1, int number2, int mathOption) {
+		String output = "Result is - ";
+		if (mathOption == 1) {
+			output += (number1 + number2);
+		} else if (mathOption == 2) {
+			output += (number1 - number2);
+		} else if (mathOption == 3) {
+			output += (number1 / number2);
+		} else if (mathOption == 4) {
+			output += (number1 * number2);
+		} else {
+			output = "You must select 1-4";
+		}
+		return output;
+	}
+
+	private static String performOperationUsingSwitch(int number1, int number2, int mathOption) {
+		String output = "Result is - ";
+		if (mathOption == 1) {
+			output += (number1 + number2);
+		} else if (mathOption == 2) {
+			output += (number1 - number2);
+		} else if (mathOption == 3) {
+			output += (number1 / number2);
+		} else if (mathOption == 4) {
+			output += (number1 * number2);
+		} else {
+			output = "You must select 1-4";
+		}
+		return output;
+	}
+}

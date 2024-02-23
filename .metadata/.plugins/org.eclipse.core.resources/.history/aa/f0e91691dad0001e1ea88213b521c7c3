@@ -1,0 +1,32 @@
+package com.in28minutes.maps;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+// Maps don't actually implement the Collections interface, even if they're considered part of it
+public class Maps {
+	public static void main(String[] args) {
+		introToMaps();
+	}
+
+	static void introToMaps() {
+//		Map<key, value>
+		Map<String, Integer> map = Map.of("A", 3, "B", 5, "Z", 10);
+//		map.put("R", 1); // error b/c Map.of is immutable
+
+		map.get("Z"); // 10
+		map.get("C"); // null
+		map.isEmpty(); // false
+		map.containsKey("A"); // true
+		map.containsKey("C"); // false
+		map.containsValue(8);// false
+		map.containsValue(3);// true
+		map.keySet(); // [Z, A, B]
+		map.values(); // {Z=10, A=3, B=5}
+
+
+	}
+
+}

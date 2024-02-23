@@ -1,0 +1,30 @@
+package com.in28days.loops;
+
+public class MyNumber {
+	private int myNum;
+
+	MyNumber(int num) {
+		this.myNum = num;
+	}
+
+	boolean isPrime() {
+
+		for (int i = 2; i < myNum; i++) {
+			int mod = myNum % i;
+
+			if (mod == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	int sumUpToN() {
+		int sum = 0;
+		for (int i = 1; i <= myNum; i++) {
+			sum += i;
+		}
+
+		return sum;
+	}
+}

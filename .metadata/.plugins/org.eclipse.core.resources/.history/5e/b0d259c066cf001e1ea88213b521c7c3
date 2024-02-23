@@ -1,0 +1,15 @@
+package com.in28minutes.referenceTypes;
+
+public class WrapperClasses {
+
+	public static void main(String[] args) {
+		// Wrapper: Boolean, Byte, Character, Double, Float, Integer, Long, Short
+		// Primitive: boolean, byte, char, double, float, int, long, short
+
+	}
+
+	static void introToWrappers() {
+		Integer int = new Integer(5);
+	}
+
+}

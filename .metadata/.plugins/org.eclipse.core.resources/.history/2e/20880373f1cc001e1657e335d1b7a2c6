@@ -1,0 +1,51 @@
+package com.in28minutes.primitives;
+
+public class MyChar {
+	private char ch;
+
+	boolean isVowel() {
+		if (ch == 'a' || ch == 'A') {
+			return true;
+		}
+
+		if (ch == 'e' || ch == 'E') {
+			return true;
+		}
+
+		if (ch == 'i' || ch == 'I') {
+			return true;
+		}
+
+		if (ch == 'o' || ch == 'O') {
+			return true;
+		}
+
+		if (ch == 'u' || ch == 'U') {
+			return true;
+		}
+
+		return false;
+	}
+
+	boolean isConsonant() {
+		return !this.isVowel();
+	}
+
+	boolean isDigit() {
+		if (ch >= 48 && ch <= 57) {
+			return true;
+		}
+
+		return false;
+	}
+
+	boolean isAlphabet() {
+	}
+
+	void printLowerCaseAlphabets() {
+	}
+
+	void printUpperCaseAlphabets() {
+	}
+
+}

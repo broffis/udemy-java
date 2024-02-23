@@ -1,0 +1,23 @@
+package com.in28minutes.primitives;
+
+public class BiNumber {
+  short number1;
+  short number2;
+ 
+  
+  public static void main(String[] args) {
+	  
+  }
+  
+  short getNumber1() {
+	  return this.number1;
+  }
+  
+  short getNumber2() {
+	  return this.number2;
+  }
+  
+  short multiply() {
+	  return this.number1 * this.number2;
+  }
+}

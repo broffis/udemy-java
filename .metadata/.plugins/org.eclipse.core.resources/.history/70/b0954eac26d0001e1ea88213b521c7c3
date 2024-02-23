@@ -1,0 +1,15 @@
+package com.in28minutes.oopAgain;
+
+public class Reviews {
+	private int id;
+	private String review;
+	private byte rating;
+
+	public Reviews(int id, String review, byte rating) {
+		super();
+		this.id = id;
+		this.review = review;
+		this.rating = rating;
+	}
+
+}

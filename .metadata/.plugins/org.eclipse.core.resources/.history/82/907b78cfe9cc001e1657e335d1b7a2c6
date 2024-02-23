@@ -1,0 +1,41 @@
+package com.in28minutes.primitives;
+
+public class BiNumber {
+	int number1;
+	int number2;
+
+	public BiNumber(int number1, int number2) {
+		this.number1 = number1;
+		this.number2 = number2;
+	}
+
+
+	int getNumber1() {
+		return this.number1;
+	}
+
+	int getNumber2() {
+		return this.number2;
+	}
+
+	int multiply() {
+		return this.number1 * this.number2;
+	}
+
+	int add() {
+		return this.number1 + this.number2;
+	}
+
+	(
+
+			int num)
+	{
+		return num * 2;
+	}
+
+	void double()
+	{
+		this.number1 = double(this.number1);
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.in28minutes.lists;
+
+import java.util.List;
+
+public class ListAndArrayList {
+
+	public static void main(String[] args) {
+		List value = List.of("A", 'A', 1, 1.0);
+
+		System.out.println(value.get(2));
+		System.out.println(value.get(2) instanceof Integer);
+
+//		Fails b/c of type guard
+//		List<String> textValues = List.of("A", 'A', 1, 1.0);
+
+	}
+
+}

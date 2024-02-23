@@ -1,0 +1,22 @@
+package com.in28minutes.primitives;
+
+public class MyChar {
+	private char ch;
+
+	boolean isVowel() {
+		return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+	}
+
+	boolean isNumber() {
+	}
+
+	boolean isAlphabet() {
+	}
+
+	void printLowerCaseAlphabets() {
+	}
+
+	void printUpperCaseAlphabets() {
+	}
+
+}

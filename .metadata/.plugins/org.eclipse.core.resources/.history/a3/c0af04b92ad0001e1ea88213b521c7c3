@@ -1,0 +1,32 @@
+package com.in28minutes.oopAgain.level2.inheritance;
+
+public class StudentRunner {
+
+	public static void main(String[] args) {
+//		Student student = new Student();
+//
+//		student.setName("Brandon");
+//		student.setEmail("in28minutes@gmail.com");
+//		student.setCollege("NECI");
+//		student.setPhoneNumber("1111111111");
+//		student.setYear(2014);
+//
+////		System.out.println(student);
+//
+//		Person person = new Person();
+//		String value = person.toString();
+//		System.out.println(value);
+//		System.out.println(person);
+
+		Employee employee = new Employee();
+		employee.setName("Brandon");
+		employee.setEmail("in28minutes@gmail.com");
+		employee.setPhoneNumber("111-111-1111");
+		employee.setEmployeGrade('C');
+		employee.setTitle("Programmer");
+		
+		System.out.println(employee);
+
+	}
+
+}

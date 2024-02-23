@@ -1,0 +1,12 @@
+package com.in28minutes.exceptionHandling;
+
+import java.util.Scanner;
+
+public class FinallyRunner {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+	}
+
+}

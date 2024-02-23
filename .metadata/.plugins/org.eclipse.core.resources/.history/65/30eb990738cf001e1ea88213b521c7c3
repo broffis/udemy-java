@@ -1,0 +1,33 @@
+package com.in28days.loops;
+
+public class LoopRunner {
+
+	public static void main(String[] args) {
+//		forLoop();
+
+//		MyNumber number = new MyNumber(3);
+//
+//		boolean isPrime = number.isPrime();
+//		System.out.println("isPrime " + isPrime);
+//
+//		int sumToN = number.sumUpToN();
+//		System.out.println("sumUpToN " + sumToN);
+//
+//		int sumOfDivisors = number.sumOfDivisors();
+//		System.out.println("sumOfDivisors " + sumOfDivisors);
+//
+//		number.printNumberTriangle();
+		
+		WhileLoops number = new WhileLoops(9);
+		
+		number.printSquaresUpToLimit();
+		number.printCubessUpToLimit();
+	}
+
+	static void forLoop() {
+		for (int i = 0; i < 10; i++) {
+			System.out.print(i + " ");
+		}
+	}
+
+}

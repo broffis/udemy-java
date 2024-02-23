@@ -1,0 +1,8 @@
+package com.in28minutes.oopAgain;
+
+public class Address {
+	private String line1;
+	private String city;
+	private String zip;
+
+}

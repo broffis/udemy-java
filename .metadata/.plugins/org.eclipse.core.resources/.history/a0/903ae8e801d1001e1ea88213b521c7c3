@@ -1,0 +1,30 @@
+package com.in28minutes.funtionalprogramming;
+
+import java.util.List;
+
+public class FuncProgramRunner {
+
+	public static void main(String[] args) {
+		List<String> list = List.of("Apple", "Bat", "Cat", "Dog");
+
+		printBasic(list);
+		printWithFP(list);
+
+
+		List<Integer> intList = List.of(1,4,7,9);
+		intList.stream().forEach(el -> System.out.println("int - " + el));
+	}
+
+	static void printBasic(List<String> list) {
+		for (String str : list) {
+			System.out.println(str);
+		}
+	}
+
+	static void printWithFP(List<String> list) {
+		list.stream().forEach(element -> System.out.println("element - " + element));
+	}
+	
+	static void
+
+}

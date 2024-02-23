@@ -1,0 +1,76 @@
+package com.in28minutes.referenceTypes;
+
+import java.math.BigDecimal;
+
+public class BuiltInReferenceTypes {
+
+	public static void main(String[] args) {
+//		basics();
+
+//		stringMethods();
+
+//		stringBuffer();
+
+	}
+
+	static void basics() {
+		BigDecimal bd = new BigDecimal("1.0");
+
+		System.out.println("Test".length());
+
+		String str = "Test";
+		System.out.println(str.length());
+
+		System.out.println(str.charAt(2));
+
+		String bigStr = "This is a lot of text";
+
+		System.out.println(bigStr.substring(5));
+		System.out.println(bigStr.substring(5, 13));
+	}
+
+	static void stringMethods() {
+//		String str = "This is a lot of text";
+//
+//		System.out.println(str.indexOf("lot"));
+//
+//		System.out.println(str.endsWith("text"));
+//
+//		System.out.println(str.isEmpty());
+//
+//		System.out.println(str.equals("test"));
+
+		String str = "in28minutes";
+
+		str.concat(" is awesome");
+
+		System.out.println(str);
+
+		String newString = str.concat(" is awesome");
+		System.out.println(newString);
+
+		String string2 = newString.concat(".");
+		System.out.println(string2);
+
+		System.out.println(str.toUpperCase());
+		System.out.println(str.toLowerCase());
+
+		String whiteSpace = "   in28Minutes    ";
+		System.out.println(whiteSpace.trim());
+
+	}
+
+	static void stringBuffer() {
+		StringBuffer sb = new StringBuffer("teST");
+
+		sb.append(" 123");
+
+		System.out.println(sb);
+	}
+
+	static void stringBuilder() {
+		StringBuilder sb = new StringBuilder("test");
+		System.out.println(sb);
+	}
+
+}

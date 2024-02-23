@@ -1,0 +1,40 @@
+package com.in28minutes.generics;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenericsRunner {
+
+	public static void main(String[] args) {
+		MyCustomList<String> list = new MyCustomList<>();
+
+		list.addElement("Element 1");
+		list.addElement("Element 2");
+		list.addElement("Element 3");
+		String val = list.get(0);
+		System.out.println(val);
+
+		MyCustomList<Integer> list2 = new MyCustomList<>();
+
+		list2.addElement(Integer.valueOf(5));
+		list2.addElement(Integer.valueOf(1));
+		list2.addElement(Integer.valueOf(2));
+		Integer val2 = list2.get(0);
+
+		System.out.println(val2);
+		
+		ArrayList<Integer> numbers = new ArrayList<>(List.of(1,2,3));
+		
+		duplicate(numbers);
+
+	}
+
+	static <X> X doubleValue(X value) {
+		return value;
+	}
+
+	static <X extends List> void duplicate(X list) {
+		list.addAll(list);
+	}
+
+}

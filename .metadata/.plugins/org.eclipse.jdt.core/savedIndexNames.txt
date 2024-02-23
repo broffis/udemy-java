@@ -1,0 +1,15 @@
+INDEX VERSION 1.134+/Users/abf7934/Personal/udemy-java/.metadata/.plugins/org.eclipse.jdt.core
+3096788477.index
+2510961908.index
+1865797976.index
+1079394556.index
+3771741340.index
+2116655488.index
+1001786792.index
+32608291.index
+745465132.index
+1842477541.index
+479845145.index
+2168523369.index
+2772757861.index
+2783759463.index

@@ -1,0 +1,43 @@
+package com.in28minutes.oopAgain.level2.inheritance;
+
+public class Person {
+	private String name;
+	private String email;
+	private String phoneNumber;
+
+	Person(String name) {
+		this.name = name;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+//	@Override
+//	public String toString() {
+//		return String.format("name - %d, email - %d, phoneNumber - %s", name, email, phoneNumber);
+//	}
+
+	@Override
+	public String toString() {
+//		return getClass().getName() + "#" + Integer.toHexString(hashCode());
+		return name + "#" + email + "#" + phoneNumber;
+	}
+}

@@ -1,0 +1,24 @@
+package com.in28minutes.referenceTypes;
+
+import java.math.BigDecimal;
+
+public class BuiltInReferenceTypes {
+
+	public static void main(String[] args) {
+		BigDecimal bd = new BigDecimal("1.0");
+
+		System.out.print("Test".length());
+
+		String str = "Test";
+		System.out.print(str.length());
+
+		System.out.println(str.charAt(2));
+
+		String bigStr = "This is a lot of text";
+
+		System.out.println(bigStr.substring(5));
+
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.in28minutes.arrays;
+
+public class Student {
+	private int[] marks;
+
+	Student(int[] marks) {
+		this.marks = marks;
+	}
+
+	void addMark(int mark) {
+		this.marks[this.marks.length] = mark;
+	}
+
+}

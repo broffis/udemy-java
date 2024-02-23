@@ -1,0 +1,51 @@
+package com.in28minutes.oopAgain.level2.inheritance;
+
+import java.math.BigDecimal;
+
+public class Employee extends Person {
+	private String title;
+	private String employerName;
+	private char employeGrade;
+	private BigDecimal salary;
+
+//	public Employee(String title, String employerName, char employeGrade, BigDecimal salary) {
+//		super();
+//		this.title = title;
+//		this.employerName = employerName;
+//		this.employeGrade = employeGrade;
+//		this.salary = salary;
+//	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getEmployerName() {
+		return employerName;
+	}
+
+	public void setEmployerName(String employerName) {
+		this.employerName = employerName;
+	}
+
+	public char getEmployeGrade() {
+		return employeGrade;
+	}
+
+	public void setEmployeGrade(char employeGrade) {
+		this.employeGrade = employeGrade;
+	}
+
+	public BigDecimal getSalary() {
+		return salary;
+	}
+
+	public void setSalary(BigDecimal salary) {
+		this.salary = salary;
+	}
+
+}
