@@ -32,3 +32,5 @@ replay_pid*
 **/.project
 /.metadata/
 /.metadata/*
+
+.DS_Store
